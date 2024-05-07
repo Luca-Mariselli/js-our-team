@@ -15,7 +15,14 @@
 // Organizzare i singoli membri in card/schede.
 
 
-
+// funzione per stampare in pagina
+function stampaInPagina (nome, ruolo, img){
+    return  `<div class="card">
+                <h2>${nome}</h2>
+                <h3>${ruolo}</h3>
+                <img class="img-width" src="./img/${img}" alt="" srcset="">
+            </div>`
+}
 
 // creo array di oggetti
 let membri = [
@@ -27,13 +34,15 @@ let membri = [
     {nome:`Barbara Ramos`, ruolo:`Graphic Designer`, immagine:`barbara-ramos-graphic-designer.jpg`}
 ];
 
-  
+let container = document.getElementById(`container`) 
 
 
 
-// creo ciclo per stampare nome e ruolo in console
+// creo ciclo per stampare nome e ruolo in console e stampare card in pagina
 for(let i = 0; i < membri.length; i++){
+    let membro = membri[i]
     console.log(`Nome` + `: ` +membri[i].nome, `Ruolo` + `: ` +membri[i].ruolo)
+    container.innerHTML += stampaInPagina(membro.nome, membro.ruolo, membro.immagine)
 }
 
 

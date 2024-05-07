@@ -10,9 +10,12 @@ html{
     color: white;
 }
 
-h1{
+h1,
+h2,
+h3{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #container{
@@ -20,4 +23,22 @@ h1{
     width: 70%;
     margin: 0 auto;
     background-color: aliceblue;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align:  center;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+
+.img-width{
+    width: 40%;
+    border-radius: 30px;
+}
+
+.card{
+    background-color: #222;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
 }
