@@ -14,18 +14,27 @@
 // :gift: BONUS 2:
 // Organizzare i singoli membri in card/schede.
 
-let membro0 = {nome:`Wayne Barnett` , ruolo:`Founder & CEO` , immagine:`wayne-barnett-founder-ceo.jpg`}
-let membro1 = {nome:`Angela Caroll` , ruolo:`Chief Editor` , immagine:`angela-caroll-chief-editor.jpg`}
-let membro2 = {nome:`Walter Gordon` , ruolo:`Office Manager` , immagine:`walter-gordon-office-manager.jpg`}
-let membro3 = {nome:`Angela Lopez` , ruolo:`Social Media Manager` , immagine:`angela-lopez-social-media-manager.jpg`}
-let membro4 = {nome:`Scott Estrada` , ruolo:`Developer` , immagine:`scott-estrada-developer.jpg`}
-let membro5 = {nome:`Barbara Ramos` , ruolo:`Graphic Designer` , immagine:`barbara-ramos-graphic-designer.jpg`}
 
+
+
+// creo array di oggetti
 let membri = [
-    membro1,
-    membro2,
-    membro3,
-    membro4,
-    membro5,
-    membro6
-]
+    {nome:`Wayne Barnett`, ruolo:`Founder & CEO`, immagine:`wayne-barnett-founder-ceo.jpg`},
+    {nome:`Angela Caroll`, ruolo:`Chief Editor`, immagine:`angela-caroll-chief-editor.jpg`},
+    {nome:`Walter Gordon`, ruolo:`Office Manager`, immagine:`walter-gordon-office-manager.jpg`},
+    {nome:`Angela Lopez`, ruolo:`Social Media Manager`, immagine:`angela-lopez-social-media-manager.jpg`},
+    {nome:`Scott Estrada`, ruolo:`Developer`, immagine:`scott-estrada-developer.jpg`},
+    {nome:`Barbara Ramos`, ruolo:`Graphic Designer`, immagine:`barbara-ramos-graphic-designer.jpg`}
+];
+
+  
+
+
+
+// creo ciclo per stampare nome e ruolo in console
+for(let i = 0; i < membri.length; i++){
+    console.log(`Nome` + `: ` +membri[i].nome, `Ruolo` + `: ` +membri[i].ruolo)
+}
+
+
+
